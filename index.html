@@ -92,11 +92,13 @@ button{cursor:pointer;border:none;background:none;font:inherit}
 .nav-logo{display:flex;align-items:center;gap:12px}
 .nav-logo-mark{
   width:42px;height:42px;border-radius:10px;
-  background:linear-gradient(135deg,var(--teal),var(--teal-dark));
+  background:white;
   display:flex;align-items:center;justify-content:center;
   flex-shrink:0;
-  box-shadow:0 4px 12px rgba(26,173,206,.4);
+  overflow:hidden;
+  padding:2px;
 }
+.nav-logo-mark img{width:100%;height:100%;object-fit:contain;display:block}
 .nav-logo-text{display:flex;flex-direction:column;line-height:1.1}
 .nav-logo-text strong{font-family:var(--font-head);font-weight:800;font-size:13px;color:white;letter-spacing:.5px}
 .nav-logo-text span{font-size:10px;color:rgba(255,255,255,.55);letter-spacing:1.5px;text-transform:uppercase;font-family:var(--font-head);font-weight:500}
@@ -799,9 +801,11 @@ footer{background:var(--navy);color:white;padding:80px 0 32px}
 .footer-brand .brand-logo{display:flex;align-items:center;gap:12px;margin-bottom:16px}
 .footer-brand .brand-mark{
   width:40px;height:40px;border-radius:10px;
-  background:linear-gradient(135deg,var(--teal),var(--teal-dark));
+  background:white;
   display:flex;align-items:center;justify-content:center;
+  overflow:hidden;padding:2px;
 }
+.footer-brand .brand-mark img{width:100%;height:100%;object-fit:contain;display:block}
 .footer-brand .brand-name strong{display:block;font-family:var(--font-head);font-size:14px;font-weight:800;letter-spacing:.5px}
 .footer-brand .brand-name small{font-size:10px;color:rgba(255,255,255,.4);letter-spacing:1.5px;text-transform:uppercase;font-family:var(--font-head)}
 .footer-brand p{font-size:13px;color:rgba(255,255,255,.45);line-height:1.7;max-width:280px;margin-bottom:24px}
@@ -931,14 +935,7 @@ footer{background:var(--navy);color:white;padding:80px 0 32px}
   <div class="nav-inner">
     <a href="#hero" class="nav-logo">
       <div class="nav-logo-mark">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38" width="28" height="28" style="display:block" aria-hidden="true">
-          <!-- Speech bubble body -->
-          <path d="M3 4.5C3 2.6 4.6 1 6.5 1H31.5C33.4 1 35 2.6 35 4.5V22C35 23.9 33.4 25.5 31.5 25.5H21L17.5 31.5L17.5 25.5H6.5C4.6 25.5 3 23.9 3 22V4.5Z" fill="rgba(255,255,255,0.93)"/>
-          <!-- M letterform -->
-          <text x="19" y="16" text-anchor="middle" dominant-baseline="middle" font-family="Montserrat,Arial Black,sans-serif" font-weight="900" font-size="13" fill="#1A2B3C" letter-spacing="-0.5">M</text>
-          <!-- Gold accent dot at bubble tail base -->
-          <circle cx="19" cy="23.5" r="1.8" fill="#F0A500"/>
-        </svg>
+        <img src="mdda_logo.png" alt="MDDA Logo"/>
       </div>
       <div class="nav-logo-text">
         <strong>Majestic Discourse</strong>
@@ -1172,13 +1169,6 @@ footer{background:var(--navy);color:white;padding:80px 0 32px}
           <div class="milestone-text">
             <strong>First Tournament Entries</strong>
             <span>Learners registered for Jozi Sho and Uhuru Worlds</span>
-          </div>
-        </div>
-        <div class="milestone">
-          <div class="milestone-year">2025</div>
-          <div class="milestone-text">
-            <strong>Georgetown Partnership</strong>
-            <span>Strategic consulting collaboration with Georgetown Global Consulting</span>
           </div>
         </div>
         <div class="milestone">
@@ -1499,7 +1489,7 @@ footer{background:var(--navy);color:white;padding:80px 0 32px}
           </div>
           <div class="pillar reveal delay-4">
             <div class="pillar-icon">🌍</div>
-            <div><strong>Globally Connected</strong><p>Partners with Georgetown Global Consulting for strategic organizational growth</p></div>
+            <div><strong>Globally Connected</strong><p>Building pathways for South African learners to compete and lead on the international stage</p></div>
           </div>
           <div class="pillar reveal delay-5">
             <div class="pillar-icon">💬</div>
@@ -1517,7 +1507,7 @@ footer{background:var(--navy);color:white;padding:80px 0 32px}
               <p>Founder & Executive Director</p>
               <div class="founder-badges">
                 <span>📍 South Africa</span>
-                <span>🎓 Georgetown Partner</span>
+                <span>🎓 Debate Educator</span>
                 <span>🏆 MDDA</span>
               </div>
             </div>
@@ -1738,11 +1728,7 @@ footer{background:var(--navy);color:white;padding:80px 0 32px}
       <div class="footer-brand reveal">
         <div class="brand-logo">
           <div class="brand-mark">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38" width="26" height="26" style="display:block" aria-hidden="true">
-              <path d="M3 4.5C3 2.6 4.6 1 6.5 1H31.5C33.4 1 35 2.6 35 4.5V22C35 23.9 33.4 25.5 31.5 25.5H21L17.5 31.5L17.5 25.5H6.5C4.6 25.5 3 23.9 3 22V4.5Z" fill="rgba(255,255,255,0.93)"/>
-              <text x="19" y="16" text-anchor="middle" dominant-baseline="middle" font-family="Montserrat,Arial Black,sans-serif" font-weight="900" font-size="13" fill="#1A2B3C" letter-spacing="-0.5">M</text>
-              <circle cx="19" cy="23.5" r="1.8" fill="#F0A500"/>
-            </svg>
+            <img src="mdda_logo.png" alt="MDDA Logo"/>
           </div>
           <div class="brand-name">
             <strong>Majestic Discourse</strong>
